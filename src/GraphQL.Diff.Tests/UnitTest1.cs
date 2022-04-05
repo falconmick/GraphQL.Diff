@@ -146,14 +146,16 @@ schema {
           Assert.Equal(diffSet.Expected, diffSet.Actual);
         }
         
-        // todo: 
+        // todo: perhapse I better understand where given Kind can exist, then make a record structure
+        // that maps the entire shape, then I can use any odd Object comparison library to return a diff
+        // OR I can recursively iterate down and make my own diff tool with schema aware printing
     }
 
     private static Dictionary<string, DiffSet> AddValuesToCompareDictionary(List<IDefinitionNode> documentDefinitions, Dictionary<string, DiffSet> emptyCompareList)
     {
       var newCompareList = new Dictionary<string, DiffSet>(documentDefinitions.Select(doc =>
       {
-        var print = doc.Print(false);
+        var print = doc.ToString(false);
         if (doc is IHasName namedDocument)
         {
           var name = namedDocument.Name.Value;
