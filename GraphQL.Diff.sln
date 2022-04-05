@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A4ABB312-CDAB-4682-A7A4-E9921FB3090C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL.Diff", "src\GraphQL.Diff\GraphQL.Diff.csproj", "{9F2C8EB5-BA49-4886-BA17-969B7444CDBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL.Diff.Tests", "src\GraphQL.Diff.Tests\GraphQL.Diff.Tests.csproj", "{12CDBE1D-4D0F-4EC4-9432-4550327592D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F2C8EB5-BA49-4886-BA17-969B7444CDBA} = {A4ABB312-CDAB-4682-A7A4-E9921FB3090C}
+		{12CDBE1D-4D0F-4EC4-9432-4550327592D4} = {A4ABB312-CDAB-4682-A7A4-E9921FB3090C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F2C8EB5-BA49-4886-BA17-969B7444CDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F2C8EB5-BA49-4886-BA17-969B7444CDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F2C8EB5-BA49-4886-BA17-969B7444CDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F2C8EB5-BA49-4886-BA17-969B7444CDBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12CDBE1D-4D0F-4EC4-9432-4550327592D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12CDBE1D-4D0F-4EC4-9432-4550327592D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12CDBE1D-4D0F-4EC4-9432-4550327592D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12CDBE1D-4D0F-4EC4-9432-4550327592D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
