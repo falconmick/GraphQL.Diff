@@ -102,9 +102,9 @@ type Human implements Character {
 
 type Droid implements Character {
   id: ID!
+  appearsIn: [Episode]!
   name: String!
   friends: [Character]
-  appearsIn: [Episode]!
   primaryFunction: String
 }
 
@@ -145,13 +145,15 @@ schema {
         {
           Assert.Equal(diffSet.Expected, diffSet.Actual);
         }
+        
+        // todo: 
     }
 
     private static Dictionary<string, DiffSet> AddValuesToCompareDictionary(List<IDefinitionNode> documentDefinitions, Dictionary<string, DiffSet> emptyCompareList)
     {
       var newCompareList = new Dictionary<string, DiffSet>(documentDefinitions.Select(doc =>
       {
-        var print = doc.Print();
+        var print = doc.Print(false);
         if (doc is IHasName namedDocument)
         {
           var name = namedDocument.Name.Value;
